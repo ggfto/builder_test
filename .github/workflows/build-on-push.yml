@@ -35,7 +35,6 @@ jobs:
           ./pre-build.sh
           chmod +x build.sh
           ./build.sh ${{ github.event.repository.name }}
-          cd ../..
 
       - name: Generate Release
         uses: shogo82148/actions-create-release@v1
@@ -43,6 +42,8 @@ jobs:
         with:
           tag_name: v${{ steps.extract_version.outputs.version }}
           make_latest: true
+          owner: ${{ github.repository_owner }}
+          repo: ${{ github.event.repository.name }}
 
       - name: Upload artifacts
         uses: shogo82148/actions-upload-release-asset@v1
