@@ -35,6 +35,7 @@ jobs:
           ./pre-build.sh
           chmod +x build.sh
           ./build.sh ${{ github.event.repository.name }}
+          cd ../..
 
       - name: Generate Release
         uses: shogo82148/actions-create-release@v1
