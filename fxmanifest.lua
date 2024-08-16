@@ -17,3 +17,9 @@ server_scripts {
 client_scripts {
     'client/*.lua'
 }
+
+files {
+    'web/nui.html',
+}
+
+nui_page 'web/nui.html'
