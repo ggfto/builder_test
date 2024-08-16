@@ -42,6 +42,7 @@ jobs:
         with:
           tag_name: v${{ steps.extract_version.outputs.version }}
           make_latest: true
+          release_name: v${{ steps.extract_version.outputs.version }}
           owner: ${{ github.repository_owner }}
           repo: ${{ github.event.repository.name }}
 
