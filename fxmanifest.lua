@@ -8,7 +8,9 @@ version 'VERSION_IDENTIFIER' -- You should not change this, to keep version upda
 
 lua54 'yes'
 
-shared_scripts { }
+shared_scripts {
+    '@ox_lib/init.lua',
+}
 
 server_scripts {
     'server/*.lua'
