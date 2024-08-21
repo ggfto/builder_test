@@ -1,6 +1,4 @@
 ./server/main.lua
 ./web/nui.html
 ./client/main.lua
-./.filelistignore
 ./fxmanifest.lua
-./version
