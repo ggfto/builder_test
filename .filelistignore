@@ -1,4 +1,5 @@
+*.filelistignore
 *.md
 *.git*
 *.txt
-version
+*version*
